@@ -1,9 +1,9 @@
 {
-  "name": "tetris-qwen",
+  "name": "tetris",
   "version": "1.0.0",
   "type": "module",
   "description": "A modern, polished Tetris with refined animations, built with TypeScript + Vite + Canvas",
-  "author": "Qwen",
+  "author": "Walhaell",
   "license": "MIT",
   "scripts": {
     "dev": "vite",

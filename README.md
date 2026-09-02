@@ -1,4 +1,4 @@
-# TETRIS · Qwen Edition
+# TETRIS
 
 A modern, polished Tetris built with **TypeScript + Vite + HTML5 Canvas**. No game
 frameworks, no external assets — everything (graphics, particles, sound) is generated

@@ -581,7 +581,7 @@ export class Renderer {
     ctx.fillStyle = "rgba(148,163,184,0.8)";
     ctx.font = "600 16px Rajdhani, sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText("Q W E N   E D I T I O N", cx, cy + 40);
+    ctx.fillText("A R C A D E", cx, cy + 40);
   }
 
   private drawControls(cx: number, cy: number): void {
