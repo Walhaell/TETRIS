@@ -1,0 +1,62 @@
+:root {
+  --bg-0: #05050c;
+  --bg-1: #0a0a16;
+  --neon-cyan: #22d3ee;
+  --neon-magenta: #e879f9;
+  --neon-violet: #8b5cf6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-0);
+  font-family: "Rajdhani", system-ui, sans-serif;
+  color: #e5e7eb;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  touch-action: none;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(1200px 800px at 50% -10%, rgba(139, 92, 246, 0.18), transparent 60%),
+    radial-gradient(900px 700px at 90% 110%, rgba(34, 211, 238, 0.14), transparent 55%),
+    radial-gradient(900px 700px at 5% 100%, rgba(232, 121, 249, 0.12), transparent 55%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
+}
+
+#app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 45%, black, transparent 78%);
+  pointer-events: none;
+}
+
+#game {
+  position: relative;
+  display: block;
+  image-rendering: auto;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+canvas {
+  touch-action: none;
+}
